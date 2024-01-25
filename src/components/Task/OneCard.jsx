@@ -436,7 +436,7 @@ const OneCard = ({ task, closeModal }) => {
                                                     <ul>
                                                         {selectedEmails.map((email, index) => (
                                                             <li
-                                                                className='bg-[#c9b4ef] rounded-lg px-2 py-1 mb-2'
+                                                                className='bg-[#c9b4ef] rounded-lg px-2 py-1 mb-2   '
                                                                 key={index}>
                                                                 {email}{' '}
                                                                 <button
@@ -456,14 +456,14 @@ const OneCard = ({ task, closeModal }) => {
                                         selectedEmails?.length == 1 ? (
                                             <button
                                                 onClick={handleInviteSubmit}
-                                                className='size-4/4 bg-[#D7CDCC] border 
-                                                rounded-md px-1  '
+                                                className='size-4/4 bg-[#cccdd7] border 
+                                                rounded-full px-1  '
                                             >
                                                 INVITE
                                             </button>) :
                                             (<button onClick={handleInviteSubmit}
-                                                className='size-4/4 bg-[#D7CDCC]
-                                                 border rounded-md px-1  '>
+                                                className='size-4/4 bg-[#cccdd7]
+                                                 border rounded-full px-1  '>
                                                 INVITE ALL
                                             </button>)
                                     )}
