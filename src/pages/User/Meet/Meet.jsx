@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Header from '../../../components/User/Header/Header'
 import Footer from '../../../components/User/Footer/Footer'
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom'
 import CreateMeeting from '../../../components/Meet/CreateMeeting';
 import { useNavigate } from 'react-router-dom'
 
@@ -17,10 +16,8 @@ const Meet = () => {
     const [meetingState, setMeetingState] = useState([])
     const dispatch = useDispatch()
     const currentDate = new Date()
-    const formattedDate = currentDate.toLocaleString();
     const [showform, setShowform] = useState(false)
     const [showModal, setShowModal] = useState(false)
-    const [error, setError] = useState('')
     const navigate = useNavigate()
 
     useEffect(() => {
@@ -28,12 +25,6 @@ const Meet = () => {
             setMeetingState(meetingData)
         }
     }, [meetingData])
-
-    // useEffect(() => {
-    //     if (access && companyName) {
-    //         dispatch(getAllMeeting({ access, companyName }))
-    //     }
-    // }, [])
 
     // joing meeting when clicking button
     const handleJoin = (roomId) => {

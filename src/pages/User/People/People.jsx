@@ -9,7 +9,6 @@ import UserProfile from '../../../components/User/UserProfile';
 import { blockUser, unblockUser } from '../../../server/User/blockUser';
 import '../user.css'
 import ManagerRegistration from '../../../components/User/ManagerRegistration';
-import { IoIosCloseCircle } from "react-icons/io";
 
 export const People = () => {
 
@@ -144,9 +143,9 @@ export const People = () => {
 
     const filteredUsers = userslist?.filter(user => {
         if (selectedRole === 'All') {
-            return true; // Show all users
+            return true;
         } else {
-            return user.role === selectedRole; // Filter by selected role
+            return user.role === selectedRole;
         }
     });
 
@@ -154,13 +153,10 @@ export const People = () => {
 
     //pagination 
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage] = useState(5); // Change this value based on your requirement
+    const [itemsPerPage] = useState(5);
 
-    // Calculate the index of the last item to display on the current page
     const indexOfLastItem = currentPage * itemsPerPage;
-    // Calculate the index of the first item to display on the current page
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    // Slice the data to display only the items for the current page
     const currentItems = result.slice(indexOfFirstItem, indexOfLastItem);
 
     const paginate = (pageNumber) => {

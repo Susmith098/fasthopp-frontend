@@ -16,14 +16,12 @@ const UserRoutes = ({ role }) => {
     return (
         <Routes>
             <Route path='dashboard' element={<Dashboard />} />
-            {/* <Route path='kanban-projects' element={<Kanban />} /> */}
             <Route path='/kanban-projects/:board' element={<Kanban />} />
             <Route path='Boards' element={<Board />} />
             <Route path='meeting' element={<Meet />} />
             <Route path='meeting/:roomID' element={<VideoMeet />} />
             <Route path='/meeting/create-meet/' element={<CreateMeeting />} />
             <Route path='notifications' element={<Notification />} />
-            {/* <Route path='/people' element={role === 'MANAGER' ? <People /> : <Navigate to='/dashboard' />} /> */}
             <Route path='/people' element={<People />} />
             <Route path='/profile' element={<Profile />} />
         </Routes>

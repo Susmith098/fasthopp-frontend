@@ -11,7 +11,6 @@ const VideoMeet = () => {
     const [error, setError] = useState('')
     const navigate = useNavigate()
     const { roomID } = useParams()
-    const location = useLocation()
 
     // zego credentials
     const appID = parseInt(import.meta.env.VITE_APP_ZEGO_APP_ID);

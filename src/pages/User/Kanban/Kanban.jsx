@@ -60,8 +60,6 @@ const Kanban = () => {
   }, [allcard, allcolumns])
 
 
-
-
   // getting all columns and cards, also handle loading
   useEffect(() => {
     if (access && board) {
@@ -138,7 +136,6 @@ const Kanban = () => {
     </div>
   );
 
-
   // filtering card based on the user
   useEffect(() => {
     if (allcard && selectedMember) {
@@ -147,8 +144,8 @@ const Kanban = () => {
       } else {
         const filteredCards = allcard.filter((card) => {
           return (
-            card.assignee && // Check if assignee array is defined
-            Array.isArray(card.assignee) && // Check if assignee is an array
+            card.assignee && 
+            Array.isArray(card.assignee) && 
             card.assignee.some(
               (assignee) => assignee && assignee.userEmail === selectedMember
             )
@@ -159,11 +156,6 @@ const Kanban = () => {
     }
   }, [selectedMember, allcard]);
 
-  // console.log(allcard, "allcard");
-
-  // Filter based on the existence of card.assignee
-  // console.log(allcard.filter((card) => card.assignee), "allcard assignee");
-
   // Extract unique user emails from all assignees
   const uniqueUserEmails = Array.from(
     new Set(
@@ -173,18 +165,12 @@ const Kanban = () => {
         ?.map((assignee) => assignee?.userEmail) || []
     )
   );
-  // console.log(uniqueUserEmails, "unique user emails");
-
-
 
   // adding more columns
   const addColumns = (e) => {
     e.preventDefault();
     const position = allcolumns?.length;
     const newPosition = position + 1;
-    console.log(allcolumns?.length, "all columns length")
-    console.log(position, "all columns length")
-    console.log(access, board, columnTitle, newPosition, "all kanban")
     dispatch(addingColumns({ access, board, columnTitle, newPosition }));
   };
 
@@ -193,7 +179,6 @@ const Kanban = () => {
       <Header />
 
       <div className='px-4'>
-        {/* <h3 className='my-2 text-lg font-bold'>{boardData.name}</h3> */}
         <p className='my-2 text-lg font-bold'>Board Name: {boardData?.name}</p>
         <p className='text-lg text-black font-semibold text-left  mb-1 pb-1'>Description: {boardData?.description}</p>
       </div>
@@ -208,8 +193,7 @@ const Kanban = () => {
                   onClick={() => setShowFilterModal(true)}
                   className='text-sm text-white text-center px-3 mb-2 bg-[#a57ee8] shadow-lg rounded-lg mt-1 p-1 mr-10'
                 >
-                  <CiFilter size={26} color='#ffffff' /> {/* Use the filter icon */}
-                  {/* Filter by member */}
+                  <CiFilter size={26} color='#ffffff' />
                 </button>
                 {showFilterModal && <FilterModal />}
               </>
@@ -269,7 +253,6 @@ const Kanban = () => {
 
       </DragDropContext>
 
-      {/* </div > */}
       <Footer />
     </div>
   )
