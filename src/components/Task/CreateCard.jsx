@@ -94,16 +94,22 @@ const CreateCard = ({ closeModal, id }) => {
     // creating a new cards based on given details
     const handleCreate = (e) => {
         e.preventDefault()
-        if (access && id && title && description && selectedColor && priority) {
+        const trimmedTitle = title.trim();
+    const trimmedDescription = description.trim();
+        if (access && id && trimmedTitle && trimmedDescription && selectedColor && priority) {
             if (maxNum < selectedEmails.length) {
                 setError('Seleted members are more than maximum members count ')
             } else {
-                console.log(access, id, title, description, maxNum, selectedEmails, selectedColor, priority, "create card")
+                console.log(access, id, trimmedTitle, trimmedDescription, maxNum, selectedEmails, selectedColor, priority, "create card")
                 dispatch(setLoading(true))
-                dispatch(newCardCreate({ access, id, title, description, maxNum, selectedEmails, selectedColor, priority })).then((res) => {
+                dispatch(newCardCreate({ access, id, title: trimmedTitle, description: trimmedDescription, maxNum, selectedEmails, selectedColor, priority })).then((res) => {
                     dispatch(setLoading(false))
                     closeModal();
                 })
+                .catch((error) => {
+                    dispatch(setLoading(false));
+                    setError('Error creating card');
+                });
             }
         } else {
             setError('Please fill all details required')
@@ -173,7 +179,7 @@ const CreateCard = ({ closeModal, id }) => {
                         <label className='pr-1'>Max members for this issue</label>
                             <input
                                 value={maxNum} onChange={maxmemberChange}
-                                className="shadow-lg appearance-none border rounded w-full py-2 px-3
+                                className="shadow-lg appearance-none border rounded py-2 px-3
                                      text-gray-700 leading-tight focus:outline-none focus:shadow-outline  mt-2"
                                 name='maximum member' type='number' placeholder='Maximum member'
                             />
