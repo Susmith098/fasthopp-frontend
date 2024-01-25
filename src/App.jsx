@@ -86,8 +86,6 @@ useEffect(() => {
         <Route path='/' element={<Home />} />
         <Route path='/login' element={!is_authenticated ? <Login /> : <Navigate to='/dashboard' />} />
         <Route path='register' element={!is_authenticated ? <Register /> : <Navigate to='/dashboard' />} />
-        {/* <Route path='/login' element={<Login/>} />
-        <Route path='register' element={<Register />} /> */}
         <Route path='contact' element={<Contact />} />
         <Route path='about' element={<About />} />
 
