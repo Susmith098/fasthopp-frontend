@@ -230,8 +230,7 @@ const CreateCard = ({ closeModal, id }) => {
                                                 {email}{' '}
 
                                                 <button
-                                                    className=' bg-[#cccdd7] text-[#7d55c8] text-sm rounded-full font-bold 
-                                                             '
+                                                    className=' bg-[#cccdd7] text-[#7d55c8] text-sm rounded-full font-bold '
                                                     type='button'
                                                     onClick={() => handleRemoveEmail(email)}
                                                 >

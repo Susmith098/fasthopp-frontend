@@ -436,17 +436,14 @@ const OneCard = ({ task, closeModal }) => {
                                                     <ul>
                                                         {selectedEmails.map((email, index) => (
                                                             <li
-                                                                className='bg-red-300 rounded-lg px-2 py-1 mb-2'
+                                                                className='bg-[#c9b4ef] rounded-lg px-2 py-1 mb-2'
                                                                 key={index}>
                                                                 {email}{' '}
                                                                 <button
-                                                                    className=' bg-[#D7CDCC]
-                                                                     text-red-600 text-sm 
-                                                                    rounded-full 
-                                                                    font-bold px-0 py-0 h-6 w-6 ml-3 '
+                                                                    className=' bg-[#cccdd7] text-[#7d55c8] text-sm rounded-full font-bold'
                                                                     type='button'
                                                                     onClick={() => handleRemoveEmail(email)}>
-                                                                    x
+                                                                    <IoIosCloseCircle />
                                                                 </button>
                                                             </li>
                                                         ))}
