@@ -52,57 +52,57 @@ Screenshots of frontend
 
 <details>
   <summary> Landing Page </summary>
-![Landing Page]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/landing%20Page.png)
+![Landing Page](https://github.com/Susmith098/fasthopp-images/blob/main/landing%20Page.png)
 </details>
 
 <details>
   <summary> Dashboard </summary>
-![Dashboard]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/Dashboard.png)
+![Dashboard](https://github.com/Susmith098/fasthopp-images/blob/main/Dashboard.png)
 </details>
 
 <details>
   <summary> Boards </summary>
-![Boards]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/Boards.png)
+![Boards](https://github.com/Susmith098/fasthopp-images/blob/main/Boards.png)
 </details>
 
 <details>
   <summary> Create board </summary>
-![Create board]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/create%20new%20board.png)
+![Create board](https://github.com/Susmith098/fasthopp-images/blob/main/create%20new%20board.png)
 </details>
 
 <details>
   <summary> Create card </summary>
-![Create card]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/create%20new%20card.png)
+![Create card](https://github.com/Susmith098/fasthopp-images/blob/main/create%20new%20card.png)
 </details>
 
 <details>
   <summary> Card Modal </summary>
-![Card modal]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/card%20popup.png)
+![Card modal](https://github.com/Susmith098/fasthopp-images/blob/main/card%20popup.png)
 </details>
 
 <details>
   <summary> Kanban Board </summary>
-![Kanban Board]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/kanban%20board.png)
+![Kanban Board](https://github.com/Susmith098/fasthopp-images/blob/main/kanban%20board.png)
 </details>
 
 <details>
   <summary> Meeting </summary>
-![Meeting]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/meeting%20links.png)
+![Meeting](https://github.com/Susmith098/fasthopp-images/blob/main/meeting%20links.png)
 </details>
 
 <details>
   <summary> Create Meeting </summary>
-![Create Meeting]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/create%20new%20meeting.png)
+![Create Meeting](https://github.com/Susmith098/fasthopp-images/blob/main/create%20new%20meeting.png)
 </details>
 
 <details>
   <summary> All Users </summary>
-![All Users]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/All%20users.png)
+![All Users](https://github.com/Susmith098/fasthopp-images/blob/main/All%20users.png)
 </details>
 
 <details>
   <summary> Profile Page </summary>
-![Profile page]([link here](https://github.com/Susmith098/fasthopp-images/blob/main/Profile%20page.png)
+![Profile page](https://github.com/Susmith098/fasthopp-images/blob/main/Profile%20page.png)
 </details>
 
 ---
