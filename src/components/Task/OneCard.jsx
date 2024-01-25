@@ -456,13 +456,13 @@ const OneCard = ({ task, closeModal }) => {
                                         selectedEmails?.length == 1 ? (
                                             <button
                                                 onClick={handleInviteSubmit}
-                                                className='size-4/4 bg-[#cccdd7] border 
+                                                className='size-4/4 bg-[#7d55c8] text-[#cccdd7] border 
                                                 rounded-full px-1  '
                                             >
                                                 INVITE
                                             </button>) :
                                             (<button onClick={handleInviteSubmit}
-                                                className='size-4/4 bg-[#cccdd7]
+                                                className='size-4/4 bg-[#7d55c8] text-[#cccdd7]
                                                  border rounded-full px-1  '>
                                                 INVITE ALL
                                             </button>)
