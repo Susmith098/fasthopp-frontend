@@ -52,7 +52,7 @@ Screenshots of frontend
 
 <details>
   <summary> Landing Page </summary>
-![Landing Page](https://github.com/Susmith098/fasthopp-images/blob/987544df9aa1280fdb5569e4e03b9e82e3036289/Dashboard.png)
+![Landing Page](../fasthopp-images/blob/main/landing Page.png)
 </details>
 
 <details>
