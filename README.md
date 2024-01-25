@@ -49,10 +49,10 @@ Tools or libraries used
 ---
 Screenshots of frontend
 ---
-
+![Landing Page](https://github.com/Susmith098/fasthopp-images/main/landing%20Page.png)
 <details>
   <summary> Landing Page </summary>
-![Landing Page](https://raw.githubusercontent.com/Susmith098/fasthopp-images/main/landing%20Page.png)
+![Landing Page](https://github.com/Susmith098/fasthopp-images/main/landing%20Page.png)
 </details>
 
 <details>
