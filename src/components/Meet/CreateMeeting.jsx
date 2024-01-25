@@ -80,6 +80,7 @@ const CreateMeeting = ({ closeModal }) => {
                                     id="datetime"
                                     type="datetime-local"
                                     placeholder="Date and Time"
+                                    min={new Date().toISOString().split(":", 2).join(":")}
                                     required
                                 />
                             </div>
