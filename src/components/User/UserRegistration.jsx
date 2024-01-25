@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { userRegister } from '../../server/User/userRegister'
 import { Success } from '../../store/User/authSlice'
-import { useNavigate } from 'react-router-dom'
 import { userSchema } from '../../Validations/RegisterValidation';
 import { ValidationError } from 'yup'
 import { addNewUser } from '../../store/User/userslistSlice'
@@ -19,7 +18,6 @@ const userRegistration = ({ closeModal }) => {
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
     const dispatch = useDispatch()
-    const navigate = useNavigate()
     const load = useSelector(state => state.loading)
 
     const handleRegistrationSubmit = async (e) => {

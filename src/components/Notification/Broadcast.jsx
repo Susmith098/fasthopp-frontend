@@ -1,19 +1,13 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { setLoading } from '../../store/Loading/loadingSlice'
-import { getBroadcastNotification } from '../../store/Notification/notificationSlice'
+import { useSelector } from 'react-redux'
 import Loading from '../Loading'
 
 const Broadcast = ({ limit }) => {
-  const access = useSelector(state => state.usertoken.access)
-  const userData = useSelector(state => state.userData)
   const load = useSelector(state => state.loading)
   const allNotifications = useSelector(state => state.notification.broadcast)
   const [result, setResult] = useState([])
-  const dispatch = useDispatch()
 
-
-  // setting 3 notification for dashboard
+  // setting limited notification for dashboard
   useEffect(() => {
     if (limit) {
       const filteredNotifications = allNotifications.slice(0, limit);
@@ -23,25 +17,6 @@ const Broadcast = ({ limit }) => {
       setResult(allNotifications);
     }
   }, [limit]);
-
-  // getting all notifications
-  // useEffect(() => {
-  //   const fetchNotification = async () => {
-  //     try {
-  //       dispatch(setLoading(true));
-  //       const companyName = userData?.companyName
-  //       if (companyName) {
-  //         await dispatch(getBroadcastNotification({ access, companyName }));
-  //         dispatch(setLoading(false));
-  //       }
-
-  //     } catch (error) {
-  //       // Handle error if needed
-  //       dispatch(setLoading(false));
-  //     }
-  //   };
-  //   fetchNotification();
-  // }, [dispatch, access, userData?.companyName]);
 
   return (
     <>

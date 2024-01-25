@@ -23,22 +23,24 @@ const CreateMeeting = ({ closeModal }) => {
     }
 
     // access, userId, companyName, roomID, description, startingtime, duration
-    
+
     const handleMeetingCreation = (e) => {
+        e.preventDefault()
         if (roomID && description && startingtime && duration) {
-            e.preventDefault()
-            const timestamp = new Date().getTime() / 1000;
-        if (timestamp >= startingtime) {
-            setError('Cannot create a meeting for backed date')
-        }
-        console.log(access, userId, companyName, roomID, description, startingtime, duration, 'tsahkjhk')
+
+            const selectedDateTime = new Date(dateTime).getTime() / 1000;
+            const currentDateTime = new Date().getTime() / 1000;
+            if (selectedDateTime < currentDateTime) {
+                setError('Cannot create a meeting for a past date or time')
+            }
+            
             createMeetAxios(access, userId, companyName, roomID, description, startingtime, duration).then((response) => {
                 dispatch(updateMeetingData(response))
                 closeModal()
             })
-            .catch((error) => {
-                setError('Error creating the meeting: ' + error.message);
-            });
+                .catch((error) => {
+                    setError('Error creating the meeting: ' + error.message);
+                });
         } else {
             setError('Please fill all details')
 

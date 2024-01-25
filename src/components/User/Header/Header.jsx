@@ -32,17 +32,11 @@ export default function Header() {
     navigate('/login')
   }
 
-    // console.log(userdata, ' i am testing')
     return (
         <header className="shadow sticky z-50 top-0">
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/dashboard" className="flex items-center">
-                        {/* <img
-                            src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
-                            className="mr-3 h-12"
-                            alt="Logo"
-                        /> */}
                         <p className='text-xl font-sans font-semibold border-2 border-black shadow-xl p-1 rounded-lg'>Fasthopp</p>
                     </Link>
                     <div className="flex items-center lg:order-2">

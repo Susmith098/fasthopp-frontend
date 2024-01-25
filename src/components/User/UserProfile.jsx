@@ -48,12 +48,6 @@ const UserProfile = ({ user_id, closeModal }) => {
                             <h3 className=' font-semibold'>Blocked:</h3>
                             <p>{result?.blocked} </p>
                         </div>
-                        {/* <div className='flex space-x-3  p-2'>
-                            <h3 className=' font-semibold'>Deleted:</h3>
-                            <p>{result?.deleted} </p>
-                        </div> */}
-                        {/* <button className='bg-app-green text-black font-bold w-full my-5 rounded p-2'  >Save Changes</button><br></br> */}
-                        {/* <p className='text-green-600'> </p> */}
                     </div>
                 </div>
             </div>

@@ -37,9 +37,6 @@ const OneCard = ({ task, closeModal }) => {
 
     console.log(assigneeList, commentList, "assignee and comments list")
 
-    // useEffect(()=>{
-    //     console.log(task, 'tasktasktasktasktask')
-    // })
     // getting emails from users list and setting in email state
     useEffect(() => {
         if (users && users?.length > 0) {
