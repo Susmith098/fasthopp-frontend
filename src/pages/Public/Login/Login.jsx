@@ -86,14 +86,15 @@ export default function Login() {
                     {" "}
                     Password{" "}
                   </label>
-                  <a
+                  {/* This is for forgot password will be done in future. */}
+                  {/* <a
                     href="#"
                     title=""
                     className="text-sm font-semibold text-black hover:underline"
                   >
                     {" "}
                     Forgot password?{" "}
-                  </a>
+                  </a> */}
                 </div>
                 <div className="mt-2">
                   <input

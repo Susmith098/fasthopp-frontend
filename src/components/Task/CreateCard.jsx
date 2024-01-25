@@ -170,6 +170,7 @@ const CreateCard = ({ closeModal, id }) => {
 
                     <>
                         <div className='mb-2 '>
+                        <label className='pr-1'>Max members for this issue</label>
                             <input
                                 value={maxNum} onChange={maxmemberChange}
                                 className="shadow-lg appearance-none border rounded w-full py-2 px-3

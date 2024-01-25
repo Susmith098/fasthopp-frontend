@@ -18,17 +18,22 @@ console.log(access, '----', companyName)
 // creating new cards with the given details
     const handleSubmit = async (e) => {
         
-        e.preventDefault()
-        if (name && description ) {
-            console.log("sdsdsd")
+        e.preventDefault();
+        const trimmedName = name.trim();
+    const trimmedDescription = description.trim();
+
+    if (trimmedName && trimmedDescription) {
           
             if (access && companyName) {
                 dispatch(setLoading(true))
-                console.log("i am going")
-                dispatch(createNewBoard({ access, companyName, userId, name, description })).then((res) => {
+                dispatch(createNewBoard({ access, companyName, userId, name: trimmedName, description: trimmedDescription })).then((res) => {
                     dispatch(setLoading(false))
                     closeModal()
                 })
+                .catch((error) => {
+                    dispatch(setLoading(false))
+                    setError('Error creating board')
+                });
             }
         } else {
             setError('Please fill all details required')
