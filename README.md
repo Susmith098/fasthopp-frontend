@@ -49,7 +49,9 @@ Tools or libraries used
 ---
 Screenshots of frontend
 ---
-![Landing Page](https://github.com/Susmith098/fasthopp-images/main/landing%20Page.png)
+
+<h3 align="center" > <img src="https://github.com/Susmith098/fasthopp-images/main/landing%20Page.png" width="30" height="30" style="margin-right: 10px;">landing page </h3>
+
 <details>
   <summary> Landing Page </summary>
 ![Landing Page](https://github.com/Susmith098/fasthopp-images/main/landing%20Page.png)
