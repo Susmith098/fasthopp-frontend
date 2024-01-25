@@ -457,13 +457,13 @@ const OneCard = ({ task, closeModal }) => {
                                             <button
                                                 onClick={handleInviteSubmit}
                                                 className='size-4/4 bg-[#7d55c8] text-[#cccdd7] border 
-                                                rounded-full px-1  '
+                                                rounded-full px-2 '
                                             >
                                                 INVITE
                                             </button>) :
                                             (<button onClick={handleInviteSubmit}
                                                 className='size-4/4 bg-[#7d55c8] text-[#cccdd7]
-                                                 border rounded-full px-1  '>
+                                                 border rounded-full px-2 '>
                                                 INVITE ALL
                                             </button>)
                                     )}
