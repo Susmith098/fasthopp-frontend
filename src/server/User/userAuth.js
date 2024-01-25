@@ -17,19 +17,3 @@ export const userLogin = (email, password) =>{
         return error;
     })
 }
-
-
-// get access token from refresh token
-// export const userAccess = (refresh) => {
-    
-//     return axios.post(`${API}/user/access`, { refresh })
-//         .then((resposne) => {
-//             const access = resposne.data.access
-//             const refresh = resposne.data.refresh
-//             const authdata = { 'access': access, 'refresh': refresh }
-//             return authdata
-//         }).catch((error => {
-//             error = { 'error': "Unauthorized Access" }
-//             return error
-//         }))
-// }
