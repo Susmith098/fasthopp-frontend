@@ -50,7 +50,7 @@ Tools or libraries used
 Screenshots of frontend
 ---
 
-<summary> Landing Page </summary>
+###Landing Page
 ![Landing Page](https://github.com/Susmith098/fasthopp-images/blob/main/landing%20Page.png)
 
 
