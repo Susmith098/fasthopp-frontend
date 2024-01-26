@@ -82,6 +82,6 @@ Screenshots of frontend
 ![All Users](https://github.com/Susmith098/fasthopp-images/blob/main/All%20users.png)
 
 ### Profile Page
-![Profile page](https://rgithub.com/Susmith098/fasthopp-images/blob/main/Profile%20page.png)
+![Profile page](https://github.com/Susmith098/fasthopp-images/blob/main/Profile%20page.png)
 
 ---
