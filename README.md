@@ -54,54 +54,34 @@ Screenshots of frontend
 ![Landing Page](https://github.com/Susmith098/fasthopp-images/blob/main/landing%20Page.png)
 
 
-<details>
-  <summary> Dashboard </summary>
+### Dashboard 
 ![Dashboard](https://github.com/Susmith098/fasthopp-images/blob/main/Dashboard.png)
-</details>
 
-<details>
-  <summary> Boards </summary>
+### Boards 
 ![Boards](https://github.com/Susmith098/fasthopp-images/blob/main/Boards.png)
-</details>
 
-<details>
-  <summary> Create board </summary>
+### Create board 
 ![Create board](https://github.com/Susmith098/fasthopp-images/blob/main/create%20new%20board.png)
-</details>
 
-<details>
-  <summary> Create card </summary>
+ ### Create card
 ![Create card](https://github.com/Susmith098/fasthopp-images/blob/main/create%20new%20card.png)
-</details>
 
-<details>
-  <summary> Card Modal </summary>
+### Card Modal
 ![Card modal](https://github.com/Susmith098/fasthopp-images/blob/main/card%20popup.png)
-</details>
 
-<details>
-  <summary> Kanban Board </summary>
+### Kanban Board
 ![Kanban Board](https://github.com/Susmith098/fasthopp-images/blob/main/kanban%20board.png)
-</details>
 
-<details>
-  <summary> Meeting </summary>
+### Meeting
 ![Meeting](https://github.com/Susmith098/fasthopp-images/blob/main/meeting%20links.png)
-</details>
 
-<details>
-  <summary> Create Meeting </summary>
+### Create Meeting
 ![Create Meeting](https://github.com/Susmith098/fasthopp-images/blob/main/create%20new%20meeting.png)
-</details>
 
-<details>
-  <summary> All Users </summary>
+### All Users 
 ![All Users](https://github.com/Susmith098/fasthopp-images/blob/main/All%20users.png)
-</details>
 
-<details>
-  <summary> Profile Page </summary>
+### Profile Page
 ![Profile page](https://rgithub.com/Susmith098/fasthopp-images/blob/main/Profile%20page.png)
-</details>
 
 ---
